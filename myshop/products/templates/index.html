@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+  </head>
+  <body>
+    <h1>Categories</h1>
+    <ul>
+      {% for category in categories %}  <!-- Use lowercase variable -->
+      <li>{{ category.title }} ({{ category.product_count }})<ul>
+        {% for product in category.product_set.all %}
+        <li>{{ product.title }} - {{ product.price }}</li>
+        {% endfor %}
+      </ul>
+    </li>
+      {% endfor %}
+    </ul>
+    <hr>
+    <h1>Products</h1>
+    <h3>Average price: {{ price_avg }}</h3>
+    <ul>
+        {% for product in products %}
+        <li>{{ product.title }} - ${{ product.price }} - {{ product.category.title }}</li> <!-- Show the category title -->
+        {% endfor %}
+    </ul>
+  </body>
+</html>

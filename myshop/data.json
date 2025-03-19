@@ -1,0 +1,78 @@
+[
+    {
+        "model":"products.Category",
+        "pk": 1,
+        "fields":{
+            "title": "Electronics",
+            "is_active": true
+        } 
+    },
+    {
+        "model":"products.Category",
+        "pk": 2,
+        "fields":{
+            "title": "Books",
+            "is_active": true
+        } 
+    },
+    {
+        "model":"products.Category",
+        "pk": 3,
+        "fields":{
+            "title": "Clothes",
+            "is_active": true
+        } 
+    },
+    {
+        "model":"products.product",
+        "pk": 1,
+        "fields":{
+            "title": "Laptop",
+            "description": "A laptop",
+            "price": 50000,
+            "category": 1
+        } 
+    },
+    {
+        "model":"products.product",
+        "pk": 2,
+        "fields":{
+            "title": "Book",
+            "description": "A book",
+            "price": 50,
+            "category": 2
+        } 
+    },
+    {
+        "model":"products.product",
+        "pk": 3,
+        "fields":{
+            "title": "T-shirt",
+            "description": "A t-shirt",
+            "price": 300,
+            "category": 3
+        } 
+    },
+   
+    {
+        "model":"products.product",
+        "pk": 4,
+        "fields":{
+            "title": "Pants",
+            "description": "A pants",
+            "price": 1200,
+            "category": 3
+        } 
+    },
+    {
+        "model":"products.product",
+        "pk": 5,
+        "fields":{
+            "title": "Shoes",
+            "description": "A shoes",
+            "price": 40,
+            "category":3
+        } 
+    }
+
+]
